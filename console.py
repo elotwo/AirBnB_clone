@@ -4,7 +4,10 @@ class mycommd(cmd.Cmd):
     def do_greet (self, person):
         """greet [person]
         Greet the named person """
-        print ("Hello")
+        if person:
+            print ("hi,", person)
+        else:
+            print ("hi")
     def do_EOF(self, line):
         return True
     def postloop(self):
