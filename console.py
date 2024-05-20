@@ -4,6 +4,8 @@
  A python script for a command processor
 """
 import cmd
+from tests.models.base_model import BaseModel
+import uuid
 
 
 class HBNBCommand(cmd.Cmd):
@@ -28,6 +30,31 @@ class HBNBCommand(cmd.Cmd):
 
         """this signal the end of File"""
         return True
+
+    def do_create(self, arg):
+        if not arg:
+            print ("**class name missing**")
+            return
+        try:
+            model = BaseModel()
+            model.save()
+            print(model.id)
+        except NameError:
+          print ("** class doesn't exist **")
+
+    def do_show(self, arg):
+        if not arg:
+            print ("**class name missing**")
+            return
+        elif model != "BaseModel":
+           print ("** class doesn't exist **")
+           return
+        elif not model.id:
+            print ("** instance id missing **")
+            return
+        else:
+            print ("model.name")
+            print ("model.id")
 
 
 if __name__ == "__main__":

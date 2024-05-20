@@ -34,6 +34,6 @@ class BaseModel:
     def to_json_string(self):
                 return json.dumps(self.to_dict(), indent=4)
     def __str__(self):
-        return f"[BaseModel]({self.id}, 'name': {self.name}, 'my_number': {self.my_number}, 'updated_at': {self.updated_at}, 'created_at': {self.created_at})"
+        return f"[BaseModel]({self.id}, 'name': {self.name}, 'my_number': {self.my_number}, 'updated_at': {self.updated_at}, 'created_at':datetime.datetime({self.created_at}))"
     def __repr__(self):
         return self.__str__()
