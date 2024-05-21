@@ -46,15 +46,22 @@ class HBNBCommand(cmd.Cmd):
         if not arg:
             print ("**class name missing**")
             return
-        elif model != "BaseModel":
-           print ("** class doesn't exist **")
-           return
-        elif not model.id:
-            print ("** instance id missing **")
+        args = arg.split()
+        if len(args) == 1:
+            print ("***instance id missing***")
             return
-        else:
-            print ("model.name")
-            print ("model.id")
+        class_name, instance_id = arg[0], arg[1]
+        if isinstance(class_name, BaseModel):
+            print ("*** class doesn't exist ***")
+            return
+        key = f"{class_name}.{instance_id}"
+        if key not in BaseModel.storage.all():
+            print("** no instance found **")
+            return
+
+        print(models.storage.all()[key])
+
+
 
 
 if __name__ == "__main__":
