@@ -3,5 +3,8 @@ body {
 	background-color: white;
 	font-size: 14px;
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	line-height: 49%;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	box-sizing: border-box;
 }

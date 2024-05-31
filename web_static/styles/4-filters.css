@@ -16,7 +16,7 @@ button {
 	border: none;
 	margin: 0 30px;
 	opacity: 0.9;
-	position: relative;
+	margin-right: auto;
 }
 button:hover {
 	opacity: 1;
