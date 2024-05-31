@@ -1,7 +1,12 @@
 footer {
-	color: white;
+	background-color: white;
+	color: red;
 	height: 60px;
 	width: 100%;
 	border-top: 1px solid #CCCCCC;
 	text-align: center;
+	margin-top: 37%;
+}
+.text {
+	line-height: 40px;
 }
