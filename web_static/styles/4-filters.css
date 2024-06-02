@@ -4,7 +4,8 @@
 	width: 100%;
 	border:1px solid #DDDDDD;
 	border-radius: 4px;
-	text-align: center;
+	text-align: right;
+	margin: auto;
 }
 button {
 	font-size: 18px;
@@ -16,7 +17,8 @@ button {
 	border: none;
 	margin: 0 30px;
 	opacity: 0.9;
-	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
 }
 button:hover {
 	opacity: 1;

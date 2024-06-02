@@ -1,7 +1,12 @@
 .container {
-	color:white;                                                                                                            height: 70px;                                                                                                           width: 100%;
+	color:white;
+	height: 70px;
+	width: 100%;
 	border:1px solid #DDDDDD;
 	border-radius: 4px;
+	text-align: right;
+	margin: auto;
+	
 }
 button {
 	font-size: 18px;
