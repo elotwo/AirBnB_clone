@@ -4,7 +4,6 @@
 	width: 100%;
 	border:1px solid #DDDDDD;
 	border-radius: 4px;
-	text-align: right;
 	margin: auto;
 	
 }
@@ -18,19 +17,36 @@ button {
 	border: none;
 	margin: 0 30px;
 	opacity: 0.9;
+	float: right;
 }
 button:hover {
 	opacity: 1;
 }
-.locations, .amenities {
+.locations {
 	height: 100%;
 	width: 25%;
-	border-right:  #DDDDDD 1px solid;
+	margin-left: 20px;
+	border-right: 1px solid #DDDDDD;
+}
+.amenities {
+	height: 100%;
+	width: 25%;
 }
 h3 {
 	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	color: black;
 }
 h4 {
 	font-weight: 400;
 	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+.src-menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 10px;
 }
