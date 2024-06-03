@@ -18,6 +18,7 @@ button {
 	margin: 0 30px;
 	opacity: 0.9;
 	float: right;
+	display: block;
 }
 button:hover {
 	opacity: 1;
@@ -25,13 +26,16 @@ button:hover {
 .locations {
 	height: 100%;
 	width: 25%;
-	margin-right: 20%;
+	margin: 0;
 	border-right: 1px solid #DDDDDD;
 }
 .amenities {
 	height: 100%;
 	width: 25%;
-	flex: 1;
+}
+.locations, .amenities {
+	display: inline-block;
+	float: left;
 }
 h3 {
 	font-weight: 600;
@@ -50,22 +54,11 @@ h4 {
 	color: black;
 }
 .src-menu {
-	margin: 10px;
-	gap: 30px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.locations,.amenities {
-	flex-basis: 50%;
-	margin: 0 20px;
 }
 ul, li {
 	list-style-type: none;
 	color: black;
 	margin: 0;
 	padding: 0;
-}
-li {
-	
+	display: none;
 }
