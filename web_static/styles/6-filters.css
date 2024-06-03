@@ -52,8 +52,13 @@ h4 {
 .src-menu {
 	margin: 10px;
 	gap: 30px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.locations,.amenities {
+	flex-basis: 50%;
+	margin: 0 20px;
 }
 ul, li {
 	list-style-type: none;
