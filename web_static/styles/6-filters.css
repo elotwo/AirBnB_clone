@@ -21,6 +21,7 @@ button {
 	border: none;
 	margin: 0 30px;
 	opacity: 0.9;
+	clear: none;
 }
 button:hover {
 	opacity: 1;
@@ -66,12 +67,13 @@ ul, li {
 .popover, .drop {
 	display: none;
 }
-.locations:hover .drop {
+.locations.drop:hover .drop {
 	display: block;
 
 }
 .drop:hover .popover {
 	display: block;
 }
-.amenities {
+.amenities:hover .drop {
+	display: block;
 }
